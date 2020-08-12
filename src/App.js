@@ -4,7 +4,7 @@ const Header = ({title}) => (
     <div>
         <h1>{title}</h1>
     </div>
-    )
+)
 
 const Button = ({handleClick, text}) => (
     <button onClick={handleClick}>
@@ -42,17 +42,11 @@ const App = () => {
     const [neutral, setNeutral] = useState(0)
     const [bad, setBad] = useState(0)
 
-    const clickGood = () => {
-        setGood(good + 1)
-    }
+    const clickGood = () => setGood(good + 1)
 
-    const clickNeutral = () => {
-        setNeutral(neutral + 1)
-    }
+    const clickNeutral = () => setNeutral(neutral + 1)
 
-    const clickBad = () => {
-        setBad(bad + 1)
-    }
+    const clickBad = () => setBad(bad + 1)
 
     const all = good + neutral + bad
     const average = (good + bad) / all
